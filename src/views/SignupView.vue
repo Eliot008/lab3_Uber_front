@@ -122,7 +122,7 @@ export default {
     };
   },
   methods: {
-    async login() {
+    async signup() {
       const { first_name, last_name, email, password, role } = this;
       const res = await fetch('http://localhost:3000/auth/signup', {
         method: 'POST',
