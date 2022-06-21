@@ -19,10 +19,13 @@
           <p class="label">Пароль</p>
           <input type="text" name="password" v-model="password" placeholder="********" />
         </div>
-        <select name="role" v-model="role">
-          <option>client</option>
-          <option>driver</option>
-        </select>
+        <div class="model-container">
+          <p class="label">Роль</p>
+          <select name="role" v-model="role">
+            <option>client</option>
+            <option>driver</option>
+          </select>
+        </div>
         <button>Зареєструватися</button>
       </div>
     </form>
@@ -97,9 +100,9 @@ button:active {
   box-shadow: 3px 2px 3px 1px rgba(0, 0, 0, 0.24);
 }
 select {
+  width: 100%;
   border: 2px solid #9ca3af;
   border-radius: 8px;
-  margin-top: 35px;
   padding: 8px 16px;
   font-size: 16px;
   color: #ffffff;
