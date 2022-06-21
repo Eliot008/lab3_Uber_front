@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <form @submit.prevent="login">
+    <form @submit.prevent="signup">
       <div class="content">
         <p class="register">Реєстрація</p>
         <div class="model-container">
